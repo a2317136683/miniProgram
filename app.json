@@ -1,17 +1,44 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/logs/logs",
-        "pages/list/list",
-        "pages/guo/guo",
-        "pages/zhang/zhang"
+        "pages/setu/setu",
+        "pages/shu/shu",
+        "pages/video/video"
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
-        "navigationBarTextStyle": "black"
+        "navigationBarBackgroundColor": "#eee",
+        "navigationBarTitleText": "涩图小助手",
+        "navigationBarTextStyle": "black",
+        "backgroundColorTop": "black"
     },
     "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "selectedIconPath": "./icons/home (1).png",
+                "iconPath": "./icons/home (2).png"
+            },
+            {
+                "pagePath": "pages/setu/setu",
+                "text": "涩图",
+                "iconPath": "./icons/cry.png",
+                "selectedIconPath": "./icons/smile_act.png"
+            },
+            {
+                "pagePath": "pages/shu/shu",
+                "text": "涩图",
+                "selectedIconPath": "./icons/picture_act.png",
+                "iconPath": "./icons/picture.png"
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "视频",
+                "selectedIconPath": "./icons/play_act.png",
+                "iconPath": "./icons/play.png"
+            }
+        ]
+    }
 }

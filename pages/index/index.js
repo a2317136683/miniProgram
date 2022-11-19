@@ -3,46 +3,9 @@
 const app = getApp()
 
 Page({
-    data: {
-        msg: '张航',
-        motto: 'Hello World',
-        userInfo: {},
-        hasUserInfo: false,
-        canIUse: wx.canIUse('button.open-type.getUserInfo'),
-        canIUseGetUserProfile: false,
-        canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
-    },
+    data: {},
     // 事件处理函数
 
-    bindViewTap() {
-        wx.navigateTo({
-            url: '../logs/logs'
-        })
-    },
-    goguo() {
-        wx.navigateTo({
-            url: '../guo/guo'
-        })
-    },
-    gozhang() {
-        wx.navigateTo({
-            url: '../zhang/zhang'
-        })
-    },
-    golist() {
-        this.setData({
-            motto: this.data.motto = "what's up bro"
-        })
-        wx.navigateTo({
-            url: '../list/list'
-        })
-    },
-    changeMsg(e) {
-        console.log(22522);
-        this.setData({
-            msg: e.detail.value
-        })
-    },
     onLoad() {
         if (wx.getUserProfile) {
             this.setData({

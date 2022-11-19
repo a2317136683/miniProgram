@@ -1,30 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-    <view class="userinfo">
-        <block wx:if="{{canIUseOpenData}}">
-            <view class="userinfo-avatar" bindtap="bindViewTap">
-                <open-data type="userAvatarUrl"></open-data>
-            </view>
-            {{motto}}
-            <open-data type="userNickName"></open-data>
-        </block>
-        <block wx:elif="{{!hasUserInfo}}">
-            <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-            <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-            <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-        </block>
-        <block wx:else>
-            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-        </block>
-    </view>
-    <image src="https://image-1306809819.cos.ap-nanjing.myqcloud.com/zha.jpg" mode="" />
-    <input class="shuru" bindinput="changeMsg" type="text" value="{{msg}}" confirm-type="search" />
-    <text selectable="">{{msg}}</text>
-    <view class="usermotto">
-        <!-- <button class="user-motto" bindtap="golist">点击去list页面</button> -->
-        <button class="user-motto" bindtap="goguo">郭桑</button>
-        <button class="user-motto" bindtap="gozhang">张桑</button>
-        <button class="user-motto" bindtap="golist">点我有好东西</button>
-    </view>
+    <image src="https://image-1306809819.cos.ap-nanjing.myqcloud.com/zha.jpg" mode="widthFix" />
 </view>
