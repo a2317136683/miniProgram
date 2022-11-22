@@ -1,0 +1,6 @@
+<!--pages/video/video.wxml-->
+<view class="v">
+    <video src="{{cur}}" />
+    <button bindtap="toggle">换一下</button>
+</view>
+<wxs src="./m.wxs" module="m" />

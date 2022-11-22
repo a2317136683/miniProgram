@@ -1,36 +1,27 @@
-// pages/list/list.js
+// pages/comment/comment.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        colorList: [],
-        isLoading: false
+        text: ''
     },
-    getColor() {
-        // 请求开始开启loading
+    getText() {
         wx.showLoading({
-            title: '数据加载中',
+            title: '加载中',
         })
         wx.request({
-            url: 'https://www.escook.cn/api/color',
-            method: 'get',
+            url: 'https://api.juncikeji.xyz/api/sgyl.php',
             success: ({
-                data: {
-                    data
-                }
+                data
             }) => {
                 this.setData({
-                    colorList: [...this.data.colorList, ...data]
+                    text: data
                 })
             },
             complete: () => {
-                // 请求完成后关闭loading
                 wx.hideLoading()
-                this.setData({
-                    isLoading: false
-                })
             }
         })
     },
@@ -38,7 +29,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.getColor()
+        this.getText()
     },
 
     /**
@@ -73,20 +64,14 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh() {
-        console.log(55555);
-        wx.stopPullDownRefresh()
+
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
     onReachBottom() {
-        if (!this.data.isLoading) {
-            this.setData({
-                isLoading: true
-            })
-            this.getColor()
-        }
+
     },
 
     /**

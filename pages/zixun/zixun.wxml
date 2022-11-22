@@ -1,0 +1,5 @@
+<!--pages/zixun/zixun.wxml-->
+<view>
+    <image src="{{src}}" mode="widthFix" show-menu-by-longpress />
+</view>
+<button bindtap="Getpic">点击或上拉</button>

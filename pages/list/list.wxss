@@ -1,0 +1,12 @@
+/* pages/list/list.wxss */
+.h {
+    height: 1000px;
+}
+
+.item {
+    margin-top: 10rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    border-radius: 10px;
+}

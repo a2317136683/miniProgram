@@ -1,0 +1,8 @@
+<!--pages/shu/shu.wxml-->
+<view class="shu">
+    <swiper autoplay interval="3000" circular>
+        <swiper-item class="sanbier" wx:for="{{shu}}" wx:key="index">
+            <image class="full" src="{{item}}" mode="heightFix" show-menu-by-longpress />
+        </swiper-item>
+    </swiper>
+</view>

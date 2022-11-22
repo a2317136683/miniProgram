@@ -1,0 +1,14 @@
+/* pages/game/game.wxss */
+.game {
+    font-size: large;
+    text-align: center;
+}
+
+.word {
+    font-weight: bold;
+}
+
+.cu {
+    font-size: larger;
+    font-weight: 700;
+}

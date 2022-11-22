@@ -1,20 +1,28 @@
 /**index.wxss**/
-.userinfo {
+.sw image {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.container .item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: #aaa;
+    width: 33.33%;
+    height: 200rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
-.shuru {
-    margin-top: 15px;
-    border: 1px solid #eee;
-}
-
-.userinfo-avatar {
-    overflow: hidden;
-    width: 128rpx;
-    height: 128rpx;
-    margin: 20rpx;
-    border-radius: 50%;
+.container .item image {
+    width: 55px;
 }

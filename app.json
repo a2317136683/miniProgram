@@ -1,9 +1,19 @@
 {
+    "usingComponents": {
+        "test": "/pages/components/test/test"
+    },
     "pages": [
         "pages/index/index",
-        "pages/setu/setu",
-        "pages/shu/shu",
-        "pages/video/video"
+        "pages/tabBar/setu/setu",
+        "pages/tabBar/shu/shu",
+        "pages/tabBar/video/video",
+        "pages/list/list",
+        "pages/dingwei/dingwei",
+        "pages/zixun/zixun",
+        "pages/game/game",
+        "pages/comment/comment",
+        "pages/like/like",
+        "pages/user/user"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -22,19 +32,19 @@
                 "iconPath": "./icons/home (2).png"
             },
             {
-                "pagePath": "pages/setu/setu",
+                "pagePath": "pages/tabBar/setu/setu",
                 "text": "涩图",
                 "iconPath": "./icons/cry.png",
                 "selectedIconPath": "./icons/smile_act.png"
             },
             {
-                "pagePath": "pages/shu/shu",
+                "pagePath": "pages/tabBar/shu/shu",
                 "text": "涩图",
                 "selectedIconPath": "./icons/picture_act.png",
                 "iconPath": "./icons/picture.png"
             },
             {
-                "pagePath": "pages/video/video",
+                "pagePath": "pages/tabBar/video/video",
                 "text": "视频",
                 "selectedIconPath": "./icons/play_act.png",
                 "iconPath": "./icons/play.png"

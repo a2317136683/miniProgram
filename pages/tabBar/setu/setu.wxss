@@ -1,0 +1,10 @@
+/* pages/setu/setu.wxss */
+
+swiper {
+    width: 375px;
+    height: 250px;
+}
+
+.full {
+    width: 100%;
+}

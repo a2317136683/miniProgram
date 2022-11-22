@@ -1,0 +1,13 @@
+/* pages/zixun/zixun.wxss */
+button {
+    margin-top: 100px;
+}
+
+view {
+    width: 100%;
+    text-align: center;
+}
+
+view image {
+    margin-top: 20px;
+}

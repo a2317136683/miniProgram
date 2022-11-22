@@ -1,4 +1,17 @@
 <!--index.wxml-->
+<view class="sw">
+    <swiper autoplay interval="3000">
+        <swiper-item>
+            <image src="https://img0.baidu.com/it/u=2900833435,993445529&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" mode="" />
+        </swiper-item>
+        <swiper-item>
+            <image src="https://img0.baidu.com/it/u=2900833435,993445529&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" mode="" />
+        </swiper-item>
+    </swiper>
+</view>
 <view class="container">
-    <image src="https://image-1306809819.cos.ap-nanjing.myqcloud.com/zha.jpg" mode="widthFix" />
+    <view class="item" wx:for="{{shuju}}" wx:key="id" bindtap="go" data-id="{{item.id}}">
+        <image src="{{item.url}}" mode="widthFix" />
+        <text>{{item.name}}</text>
+    </view>
 </view>

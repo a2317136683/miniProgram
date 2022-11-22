@@ -1,0 +1,15 @@
+<!--pages/game/game.wxml-->
+<view class="game">
+    <view class="cu">
+        <text>每日单词</text>
+    </view>
+    <view wx:for="{{word}}" wx:key="index">
+        <view>
+            单词: <text class="word">{{item.word}}</text>
+        </view>
+        <view>
+            <text>{{item.trans}}</text>
+        </view>
+    </view>
+    <button bindtap="ten">再来十个</button>
+</view>
